@@ -124,16 +124,157 @@ nav{
   font-size: 30px;
   font-weight: bolder;
   color: white;
-  z-index: 1;
+  z-index: 2;
   line-height: 35px;
 }
-.img img:hover{
-   opacity: 0.9;
+/* .img::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.081);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+} */
+.inner-img img:hover{
+   opacity: 0.8;
+  
   
 }
+
 @media(max-width:575px){
 .col-img{
     width: fit-content !important;
  
 }
+}
+.main-img{
+    overflow-x:auto ;
+}
+.inner-img{
+  width: 100%;
+}
+
+.main-img::-webkit-scrollbar{
+    width: 0;
+}
+@media(min-width:330px) and (max-width:575px){
+    .inner-img{
+        margin-right: 20px !important;
+    }
+}
+@media(max-width:329px) {
+    .inner-img{
+        margin-right: 30px !important;
+    }
+}
+@media(max-width:305px) {
+    .inner-img{
+        margin-right: 40px !important;
+    }
+}
+@media(max-width:298px) {
+    .inner-img{
+        margin-right: 60px !important;
+    }
+}
+.inner-img-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.inner-img-sub-title{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+}
+.inner-img-title-2{
+    font-weight: bold;
+}
+/* .inner-img-c-3{
+    width: 250px!important;
+    border: 1px solid;
+   
+}
+.inner-img-c-3 .img{
+    width: 100%px !important;
+} */
+.card-3{
+    background-color: #faf1ed;
+}
+.main-c-3{
+    overflow-x:auto ;
+}
+.main-c-3::-webkit-scrollbar{
+    width: 0;
+}
+.c-3-1 img{
+    border-radius: 7px;
+} 
+.c-3-1 img:hover{
+    opacity: 0.8;
+}
+.c-3-2 img:hover{
+    opacity: 0.8;
+}
+.c-3-3 img:hover{
+    opacity: 0.8;
+}
+.c-3-3 img{
+    border-radius: 7px;
+} 
+.c-3-1 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.c-3-1 p:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.681);
+}
+.c-3-2 p:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.681);
+}
+.c-3-3 p:hover{
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.681);
+}
+.c-3-2 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.c-3-3 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.last{
+    background-color: #faf1ed;
+   
+}
+.last .col-8 img{
+    height: 100vh;
+}
+.last .btn{
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
+@media(max-width:298px){
+    .last .btn{
+        width: 80%;
+    }
+}
+.last .btn:hover{
+    background-color: rgba(0, 0, 0, 0.839);
+    color: white;
+}
+.last h1{
+    font-weight: bolder;
+}
+.last p{
+    font-size: 25px;
 }
